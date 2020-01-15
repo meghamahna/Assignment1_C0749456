@@ -41,13 +41,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @objc func doubleTap(gestureRecognizer: UITapGestureRecognizer){
             
-//            for annotation in mapView.annotations{
-//                mapView.removeAnnotation(annotation)
-//            }
-//
-//            for overlay in mapView.overlays{
-//                mapView.removeOverlay(overlay)
-//            }
+            for annotation in mapView.annotations{
+                mapView.removeAnnotation(annotation)
+            }
+
+            for overlay in mapView.overlays{
+                mapView.removeOverlay(overlay)
+            }
                 
                 let touchPoint = gestureRecognizer.location(in: mapView)
                 let coordinate = mapView.convert(touchPoint, toCoordinateFrom: mapView)
