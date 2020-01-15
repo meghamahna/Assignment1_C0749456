@@ -28,6 +28,27 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y2-U2-1mX">
                                 <rect key="frame" x="290" y="589" width="67" height="67"/>
                                 <state key="normal" image="locationButton"/>
+                                <connections>
+                                    <action selector="findMyWay:" destination="mgK-Cq-qRs" eventType="touchUpInside" id="sW6-l3-OFR"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="93N-Do-yZE">
+                                <rect key="frame" x="23" y="521" width="131" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="" image="car" catalog="system"/>
+                                    <segment title="" image="person" catalog="system"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZu-xm-W0p">
+                                <rect key="frame" x="292" y="67" width="67" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="zoom.png"/>
+                                <connections>
+                                    <action selector="zoomOut:" destination="mgK-Cq-qRs" eventType="touchUpInside" id="aJX-br-cCO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -50,14 +71,18 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Lk4-jZ-Kgc" id="WvM-Ta-zEX"/>
+                        <outlet property="segmentControl" destination="93N-Do-yZE" id="jXG-vU-hgZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZn-lc-RWe" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="71"/>
+            <point key="canvasLocation" x="-375.19999999999999" y="-26.53673163418291"/>
         </scene>
     </scenes>
     <resources>
+        <image name="car" catalog="system" width="64" height="46"/>
         <image name="locationButton" width="67" height="67"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="zoom.png" width="225" height="225"/>
     </resources>
 </document>

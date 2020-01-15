@@ -13,6 +13,9 @@
 		3A821F3623CE86190092977E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A821F3423CE86190092977E /* Main.storyboard */; };
 		3A821F3823CE861A0092977E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A821F3723CE861A0092977E /* Assets.xcassets */; };
 		3A821F3B23CE861A0092977E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A821F3923CE861A0092977E /* LaunchScreen.storyboard */; };
+		3A821F4423CE97530092977E /* walk.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A821F4223CE97530092977E /* walk.png */; };
+		3A821F4523CE97530092977E /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A821F4323CE97530092977E /* car.jpg */; };
+		3A821F4D23CEA5A60092977E /* zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A821F4C23CEA5A60092977E /* zoom.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3A821F3723CE861A0092977E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A821F3A23CE861A0092977E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A821F3C23CE861A0092977E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A821F4223CE97530092977E /* walk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walk.png; sourceTree = "<group>"; };
+		3A821F4323CE97530092977E /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		3A821F4C23CEA5A60092977E /* zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				3A821F3423CE86190092977E /* Main.storyboard */,
 				3A821F3723CE861A0092977E /* Assets.xcassets */,
 				3A821F3923CE861A0092977E /* LaunchScreen.storyboard */,
+				3A821F4323CE97530092977E /* car.jpg */,
+				3A821F4223CE97530092977E /* walk.png */,
+				3A821F4C23CEA5A60092977E /* zoom.png */,
 				3A821F3C23CE861A0092977E /* Info.plist */,
 			);
 			path = Assignment1_C0749456;
@@ -127,6 +136,9 @@
 			files = (
 				3A821F3B23CE861A0092977E /* LaunchScreen.storyboard in Resources */,
 				3A821F3823CE861A0092977E /* Assets.xcassets in Resources */,
+				3A821F4D23CEA5A60092977E /* zoom.png in Resources */,
+				3A821F4523CE97530092977E /* car.jpg in Resources */,
+				3A821F4423CE97530092977E /* walk.png in Resources */,
 				3A821F3623CE86190092977E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
