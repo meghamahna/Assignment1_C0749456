@@ -1,24 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mgK-Cq-qRs">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="wpd-R8-Pue">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="overFullScreen" id="mgK-Cq-qRs" customClass="ViewController" customModule="IOS_C0749456_Ass1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MhD-Yn-D1g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-cX-8gt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Find My Way">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-jZ-Kgc">
+                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y2-U2-1mX">
+                                <rect key="frame" x="290" y="589" width="67" height="67"/>
+                                <state key="normal" image="locationButton"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lk4-jZ-Kgc" firstAttribute="leading" secondItem="mtD-x0-jFb" secondAttribute="leading" id="1PS-vL-Umv"/>
+                            <constraint firstItem="YWM-cX-8gt" firstAttribute="trailing" secondItem="mtD-x0-jFb" secondAttribute="trailing" id="6gv-sM-y0G"/>
+                            <constraint firstItem="mtD-x0-jFb" firstAttribute="bottom" secondItem="YWM-cX-8gt" secondAttribute="bottom" constant="617" id="ACM-Pb-bsg"/>
+                            <constraint firstItem="7Y2-U2-1mX" firstAttribute="leading" secondItem="mtD-x0-jFb" secondAttribute="leading" constant="290" id="BFn-d7-9Jc"/>
+                            <constraint firstItem="Lk4-jZ-Kgc" firstAttribute="top" secondItem="mtD-x0-jFb" secondAttribute="top" constant="30" id="IiC-oj-0mD"/>
+                            <constraint firstItem="mtD-x0-jFb" firstAttribute="bottom" secondItem="7Y2-U2-1mX" secondAttribute="bottom" constant="11" id="Lto-ms-gN4"/>
+                            <constraint firstItem="7Y2-U2-1mX" firstAttribute="top" secondItem="YWM-cX-8gt" secondAttribute="bottom" constant="539" id="QJF-Uu-km2"/>
+                            <constraint firstItem="YWM-cX-8gt" firstAttribute="leading" secondItem="mtD-x0-jFb" secondAttribute="leading" id="XoW-VC-EjZ"/>
+                            <constraint firstItem="Lk4-jZ-Kgc" firstAttribute="trailing" secondItem="mtD-x0-jFb" secondAttribute="trailing" id="Yxf-0x-ZKg"/>
+                            <constraint firstItem="Lk4-jZ-Kgc" firstAttribute="bottom" secondItem="mtD-x0-jFb" secondAttribute="bottom" id="dH6-dI-rNO"/>
+                            <constraint firstItem="YWM-cX-8gt" firstAttribute="top" secondItem="mtD-x0-jFb" secondAttribute="top" id="rf8-87-UwS"/>
+                            <constraint firstItem="mtD-x0-jFb" firstAttribute="trailing" secondItem="7Y2-U2-1mX" secondAttribute="trailing" constant="18" id="zkm-F0-5at"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mtD-x0-jFb"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="Lk4-jZ-Kgc" id="WvM-Ta-zEX"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZn-lc-RWe" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="71"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="locationButton" width="67" height="67"/>
+    </resources>
 </document>
